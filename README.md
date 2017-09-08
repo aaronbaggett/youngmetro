@@ -1,4 +1,4 @@
-# youngmetro <img src="/Users/AB/Desktop/youngmetro/inst/rmarkdown/templates/metro_beamer/skeleton/figs/youngmetro_logo.png" align="right" />
+# youngmetro <img src="inst/rmarkdown/templates/metro_beamer/skeleton/figs/youngmetro_logo.png" align="right" />
 
 <br>
 
