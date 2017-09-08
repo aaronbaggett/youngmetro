@@ -7,9 +7,7 @@
 
 ***
 
-The **uiucthemes** package includes my collection of UIUC themed templates.
-
-Presently, only the UIUC Beamer Theme is embedded within the package.
+The **youngmetro** package is a semi-custom beamer theme for use in RStudio via R Markdown. This theme borrows heavily from the HSRM, sthlm, and Metropolis Beamer themes.
 
 ## UIUC Beamer Theme - Example
 
