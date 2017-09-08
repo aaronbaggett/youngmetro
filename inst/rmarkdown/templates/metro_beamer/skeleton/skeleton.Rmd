@@ -1,0 +1,111 @@
+---
+title: "Introduction to RStudio"
+shorttitle: "Ch. 1"
+subtitle: "Getting in There! Doing statistics! Learning! Growing!"
+author: "Aaron R. Baggett, Ph.D."
+short-author: "Baggett"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+short-date: '`r format(Sys.Date(), "%m/%d/%y")`'
+institute: | 
+  | University of Mary Hardin-Baylor
+  | PSYC 4316: Experimental Psychology
+short-institute: "PSYC 2316"
+department: "Department of Psychology" # Institute must be defined
+monofont: Lucida Console
+mainfont: Roboto
+fontsize: 14pt
+classoption: aspectratio = 1610
+output: 
+   youngmetro::metro_beamer
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(dplyr)
+library(fivethirtyeight)
+library(emo)
+```
+
+# My Favorite R Packages
+
+## My Favorite R Packages
+- My favorite **R** packages:
+    1. **`ggplot2`**
+    2. **`dplyr`**
+    3. **`fivethirtyeight`**
+
+# My Family
+
+## My Family
+- Lisa
+    - Rhett
+    - Keller
+        - Juniper
+
+# R Code
+
+## R Code
+Here is some **R** code
+
+\scriptsize
+```{r, eval = FALSE}
+# Load data
+data(fivethirtyeight::flying)
+
+# Calculate count of education among male flyers
+fivethirtyeight::flying %>% 
+  group_by(gender) %>% 
+  filter(gender == "Male") %>% 
+  count(education)
+```
+
+# Equations
+
+## Equations
+- Calculate sample variance ($s^2$)
+
+\begin{equation}
+{s}^{2}=\frac{{\Sigma(X-\bar{X})}^{2}}{N-1} 
+\label{eq:variance}
+\end{equation}
+
+# Images
+
+## Images
+
+\begin{figure}
+\begin{center}
+\includegraphics[width = 2.5in]{RStudio-Logo-Blue-Gray-250.png}
+\caption{RStudio Logo}
+\label{rslogo}
+\end{center}
+\end{figure}
+
+# Links
+
+## Links
+- \url{http://aaronbaggett.com}
+- See also the image in Figure \ref{rslogo}
+
+# Blocks
+
+## Blocks
+\begin{block}{Block Title Here}
+	\begin{itemize}
+		\item point 1
+		\item point 2
+	\end{itemize}
+\end{block}
+
+## Blocks
+\begin{alertblock}{Alert Block}
+	Highlight important information.
+\end{alertblock}
+
+## Blocks
+\begin{exampleblock}{Example Block}
+	Examples can be good.
+\end{exampleblock}
+
+# Closing Slide

@@ -1,0 +1,5 @@
+name: >
+ youngmetro
+description: >
+ A custom R Markdown Beamer presentation theme based on sthlm, HSRM, and Metropolis themes.
+create_dir: true
