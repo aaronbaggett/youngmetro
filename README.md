@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/aaronbaggett/youngmetro.svg?branch=master)](https://travis-ci.org/aaronbaggett/youngmetro)
+
 # youngmetro <img src="inst/rmarkdown/templates/metro_beamer/skeleton/figs/youngmetro_logo.png" align="right" />
 
 <br>
