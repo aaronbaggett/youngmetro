@@ -23,8 +23,13 @@ Once installed, select File > New File > R Markdown > From Template > `youngmetr
 
 ## Front Matter
 
-The R Markdown yaml is pre-populatedd with the following:
+The Pandoc YAML is pre-populated with the following:
 
+[INSERT YAML HERE]
+
+
+
+<!--
 ```yaml
 ---
 title: "UIUC Beamer Theme"
@@ -96,3 +101,4 @@ must be set equal to `true`.
 
 \endcols
 ```
+-->
