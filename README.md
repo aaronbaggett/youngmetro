@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/aaronbaggett/youngmetro.svg?branch=master)](https://travis-ci.org/aaronbaggett/youngmetro)
-
 # youngmetro <img src="inst/rmarkdown/templates/metro_beamer/skeleton/figs/youngmetro_logo.png" align="right" />
 
 <br>
@@ -9,7 +7,9 @@
 
 ***
 
-The **youngmetro** package is a semi-custom beamer theme for use in RStudio via R Markdown. This theme borrows heavily from the HSRM, sthlm, and Metropolis Beamer themes.
+## Overview
+The **youngmetro** package is a semi-custom beamer theme for use in RStudio via R Markdown. This theme borrows heavily from the [HSRM](https://github.com/benjamin-weiss/hsrmbeamertheme), [sthlm](https://github.com/markolsonse/sthlmBeamerTheme), and [Metropolis](https://github.com/matze/mtheme) Beamer themes.
+
 
 ## Installation
 ```r
@@ -17,11 +17,13 @@ install.packages("devtools")
 devtools::install_github("aaronbaggett/youngmetro")
 ```
 
-Once installed, select File > New File > R Markdown > From Template > `youngmetro`
+Once installed, select *File* > *New File* > *R Markdown* > *From Template* > `youngmetro`
 
 [INSERT IMAGE HERE]
 
-## Front Matter
+## Usage
+
+### Front Matter
 
 The Pandoc YAML is pre-populated with the following:
 
