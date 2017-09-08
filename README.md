@@ -11,9 +11,19 @@
 
 The **youngmetro** package is a semi-custom beamer theme for use in RStudio via R Markdown. This theme borrows heavily from the HSRM, sthlm, and Metropolis Beamer themes.
 
-## UIUC Beamer Theme - Example
+## Installation
+```r
+install.packages("devtools")
+devtools::install_github("aaronbaggett/youngmetro")
+```
 
-Within an `RMarkdown` file, add the following:
+Once installed, select File > New File > R Markdown > From Template > `youngmetro`
+
+[INSERT IMAGE HERE]
+
+## Front Matter
+
+The R Markdown yaml is pre-populatedd with the following:
 
 ```yaml
 ---
