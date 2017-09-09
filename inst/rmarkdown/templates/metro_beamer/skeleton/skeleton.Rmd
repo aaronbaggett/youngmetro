@@ -11,8 +11,8 @@ institute: |
   | PSYC 4316: Experimental Psychology
 short-institute: "PSYC 2316"
 department: "Department of Psychology" # Institute must be defined
-monofont: Lucida Console
 mainfont: Roboto
+monofont: Lucida Console
 fontsize: 14pt
 classoption: aspectratio = 1610
 output: 
