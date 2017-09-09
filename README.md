@@ -90,14 +90,14 @@ Place all figures in the `figs` folder and refer directly to the filename with n
 
 `youngmetro` uses XeLaTeX as the default TeX typesetting engine. Just comment out the `mainfont:` and `monofont` options in the front matter. This should revert back to Pandoc's defaults.
 
-Note: Roboto can be downloaded free from Google Fonts here: <https://fonts.google.com/specimen/Roboto>
-
 ``` yaml
 ---
 # mainfont: Roboto
 # monofont: Lucida Console
 ---
 ```
+
+Note: Roboto can be downloaded free from Google Fonts [here](https://fonts.google.com/specimen/Roboto).
 
 ### Emoji
 
