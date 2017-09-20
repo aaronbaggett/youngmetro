@@ -493,83 +493,44 @@ eso-pic
 % ------------------------------------------------------------------------------------------------
 
 % Titlepage structure
-%\def\maketitle{\ifbeamer@inframe\titlepage\else\frame[plain]{\titlepage}\fi}
-%\def\titlepage{\usebeamertemplate{title page}}
-%\setbeamertemplate{title page}
-%\frame[plain]{\titlepage}
-%{
-%	% Add background to title page
-%	\AddToShipoutPictureFG*{\includegraphics[width=\paperwidth]{title_graphic.pdf}}
-%	\begin{minipage}[b][\paperheight]{\textwidth}
-%	%\vspace*{5mm}
-%	%\includegraphics[height=14mm]{./logo}\par
-%	\vspace*{20mm}
-%	\ifx\insertsubtitle\@empty%
-%	\else%
-%		{\usebeamerfont{title}\usebeamercolor[fg]{title}\MakeUppercase{\inserttitle}\par}%
-%	\fi%
-%	\ifx\insertsubtitle\@empty%
-%	\else%
-%		{\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
-%		\vspace*{5mm}
-%	\fi%
-%	\ifx\insertdate\@empty%
-%	\else%
-%		{\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate\par}%
-%	\fi% 
-%	
-%	\vfill
-%	
-%	\ifx\insertauthor\@empty%
-%	\else%
-%		{\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par}%
-%	\fi%
-%	\ifx\insertinstitut\@empty%
-%	\else%
-%		\vspace*{1mm}
-%		{\usebeamerfont{institute}\usebeamercolor[sthlmDarkBlue]{institute}\insertinstitute\par}%
-%	\fi% 
-%	\vspace*{5mm}
-%	\end{minipage}
-%}
-
 \def\maketitle{\ifbeamer@inframe\titlepage\else\frame[plain]{\titlepage}\fi}
-
 \def\titlepage{\usebeamertemplate{title page}}
 \setbeamertemplate{title page}
+\frame[plain]{\titlepage}
 {
-  \begin{minipage}[b][\paperheight]{\textwidth}
-    \vfill
-    \ifx\inserttitle\@empty%
-    \else%
-    {\raggedright\linespread{1.0}\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}%
-    \vspace*{0.5em}
-    \fi%
-    \ifx\insertsubtitle\@empty%
-    \else%
-    {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
-    \vspace*{0.5em}
-    \fi%
-    \begin{tikzpicture}\draw[normal text.fg] (0, 0) -- (\textwidth, 0);\end{tikzpicture}%
-    \vspace*{1em}
-    \ifx\insertauthor\@empty%
-    \else%
-    {\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor \par}%
-    \vspace*{5mm}
-    \fi%
-    \ifx\insertdate\@empty%
-    \else%
-    {\usebeamerfont{date}\usebeamercolor[fg]{date}\small{Updated: \today} \par}%
-    \fi%
-    \ifx\insertinstitut\@empty%
-    \else%
-    \vspace*{5mm}
-    {\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute\par}%
-    \fi%
- 	\hfill \includegraphics[height=20mm]{title_graphic.pdf}  \par
+	% Add background to title page
+	\AddToShipoutPictureFG*{\includegraphics[width=\paperwidth]{title_graphic.pdf}}
+	\begin{minipage}[b][\paperheight]{\textwidth}
+	%\vspace*{5mm}
+	%\includegraphics[height=14mm]{./logo}\par
+	\vspace*{20mm}
+	\ifx\insertsubtitle\@empty%
+	\else%
+		{\usebeamerfont{title}\usebeamercolor[fg]{title}\MakeUppercase{\inserttitle}\par}%
+	\fi%
+	\ifx\insertsubtitle\@empty%
+	\else%
+		{\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+		\vspace*{5mm}
+	\fi%
+	\ifx\insertdate\@empty%
+	\else%
+		{\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate\par}%
+	\fi% 
+	
+	\vfill
+	
+	\ifx\insertauthor\@empty%
+	\else%
+		{\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par}%
+	\fi%
+	\ifx\insertinstitut\@empty%
+	\else%
+		\vspace*{1mm}
+		{\usebeamerfont{institute}\usebeamercolor[sthlmDarkBlue]{institute}\insertinstitute\par}%
+	\fi% 
 	\vspace*{5mm}
-    \vfill
-  \end{minipage}
+	\end{minipage}
 }
 
 % ------------------------------------------------------------------------------------------------
