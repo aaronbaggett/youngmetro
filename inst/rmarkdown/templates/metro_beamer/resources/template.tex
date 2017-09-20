@@ -496,10 +496,9 @@ eso-pic
 \def\maketitle{\ifbeamer@inframe\titlepage\else\frame[plain]{\titlepage}\fi}
 \def\titlepage{\usebeamertemplate{title page}}
 \setbeamertemplate{title page}
-%\frame[plain]{\titlepage}
+\frame[plain]{\titlepage}
 {
 	% Add background to title page
-  	%\AddToShipoutPictureFG*{\includegraphics[width=\paperwidth]{backgroundiegs.pdf}}
 	\AddToShipoutPictureFG*{\includegraphics[width=\paperwidth]{title_graphic.pdf}}
 	\begin{minipage}[b][\paperheight]{\textwidth}
 	%\vspace*{5mm}
