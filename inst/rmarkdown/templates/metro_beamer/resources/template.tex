@@ -285,9 +285,10 @@ wasysym,
 hyperref,
 hanging,
 multirow,
-eso-pic
+eso-pic,
 }
 
+\usepackage[export]{adjustbox}
 % ------------------------------------------------------------------------------------------------
 %	GRAPHICS PATH
 % ------------------------------------------------------------------------------------------------
@@ -492,6 +493,18 @@ eso-pic
 %	TITLE PAGE
 % ------------------------------------------------------------------------------------------------
 
+\newcommand\AtPageUpperRight[1]{\AtPageUpperLeft{%
+ \put(\LenToUnit{\paperwidth},\LenToUnit{0\paperheight}){#1}%
+ }}%
+\newcommand\AtPageLowerRight[1]{\AtPageLowerLeft{%
+ \put(\LenToUnit{\paperwidth},\LenToUnit{0\paperheight}){#1}%
+ }}%
+
+%\AddToShipoutPictureBG*{% Add picture to current page
+%  \AtStockLowerLeft{% Add picture to lower-left corner of paper stock
+%    \includegraphics[width=\stockwidth,height=\stockheight]{tiger}}% http://latex.tug.org/texlive/devsrc/Master/texmf-dist/doc/generic/pstricks/images/tiger.eps
+%}
+
 % Titlepage structure
 \def\maketitle{\ifbeamer@inframe\titlepage\else\frame[plain]{\titlepage}\fi}
 \def\titlepage{\usebeamertemplate{title page}}
@@ -500,7 +513,10 @@ eso-pic
 {
 	% Add background to title page
   	%\AddToShipoutPictureFG*{\includegraphics[width=\paperwidth]{backgroundiegs.pdf}}
-	\AddToShipoutPictureFG*{\includegraphics[width=\paperwidth]{title_graphic.pdf}}
+	\AddToShipoutPictureFG*{
+		\AtPageLowerRight{\put(-95, 0){
+			\includegraphics[width=.2\paperwidth]{title_graphic.pdf}}}}
+	%\AddToShipoutPictureFG*{\includegraphics[width=\paperwidth]{youngmetro_logo.png}}
 	\begin{minipage}[b][\paperheight]{\textwidth}
 	%\vspace*{5mm}
 	%\includegraphics[height=14mm]{./logo}\par
@@ -571,7 +587,7 @@ eso-pic
 \newdimen\progressbar@tmpdim % auxiliary dimension
 
 \progressbar@pbwd=\paperwidth
-\progressbar@pbht=1ex
+\progressbar@pbht=.5ex
 
 % the progress bar
 \def\progressbar@progressbar{%
@@ -595,7 +611,7 @@ eso-pic
 
 \setbeamertemplate{headline}{
 
-  \begin{beamercolorbox}[wd=\paperwidth,ht=1.0ex,center,dp=1ex]{sthlmLightGrey}%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=.5ex,center,dp=.5ex]{sthlmLightGrey}%
     \progressbar@progressbar%
   \end{beamercolorbox}%
 }
@@ -615,10 +631,26 @@ eso-pic
 % ------------------------------------------------------------------------------------------------
 \setbeamertemplate{frametitle}
 {
-\begin{beamercolorbox}[wd=\paperwidth,leftskip=0.3cm,rightskip=0.3cm,ht=3ex,dp=1.5ex]{frametitle}
-	 \usebeamerfont{frametitle}{\insertframetitle}%
+\begin{beamercolorbox}[sep=1.375ex,wd=\paperwidth,leftskip=0.075cm,rightskip=0.3cm,ht=2.75ex,dp=1.375ex]{frametitle}
+	 \usebeamerfont*{frametitle}{\insertframetitle}%
 \end{beamercolorbox}
 }
+
+
+%\setbeamertemplate{block alerted begin}
+%{
+%  \setbeamercolor{item}{parent=block body alerted}
+%  \par\vskip\medskipamount%
+%  \begin{beamercolorbox}[sep=.5ex,dp=0.6ex,leftskip=0.5ex,rightskip=0.5ex]{block title alerted}
+%    \usebeamerfont*{block title alerted}\insertblocktitle%
+%  \end{beamercolorbox}%
+%  {\parskip0pt\par}%
+%  {\nointerlineskip\vskip-0.5pt}%
+%  \usebeamerfont{block body alerted}%
+%  \begin{beamercolorbox}[sep=.5ex,dp=0.6ex,leftskip=0.5ex,rightskip=0.5ex,vmode]{block body alerted}%
+%}
+%\setbeamertemplate{block alerted end}
+%{\end{beamercolorbox}\vskip\smallskipamount}
 
 % ------------------------------------------------------------------------------------------------
 %	FOOTLINE
@@ -628,13 +660,13 @@ eso-pic
 {
   \leavevmode%
   \hbox{%
-  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+  \begin{beamercolorbox}[sep=1ex,wd=.333333\paperwidth,ht=2.25ex,dp=1ex,left]{author in head/foot}%
     \usebeamerfont{author in head/foot}\insertshortauthor\expandafter\beamer@ifempty\expandafter{\beamer@shortinstitute}{}{~~(\insertshortinstitute)}
   \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+  \begin{beamercolorbox}[sep=1ex,wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
     \usebeamerfont{title in head/foot}\insertshorttitle
   \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+  \begin{beamercolorbox}[sep=1ex,wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
     \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
     \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
   \end{beamercolorbox}}%
