@@ -4,7 +4,7 @@ youngmetro <img src="http://aaronbaggett.com/images/youngmetro_logo.png" align="
 
 <br>
 
-> Way too many questions you must think I trust you
+> Way too many questions you must think I trust you  
 > You searching for answers I do not know nothing
 
 ------------------------------------------------------------------------
