@@ -104,4 +104,3 @@ Note: Roboto can be downloaded free from Google Fonts [here](https://fonts.googl
 ### Emoji
 
 There's not really an easy way to add emoji to pdf LaTeX documents 😡. Most packages require including emoji as essentially .png or .pdf files 🤕. Unfortunately, at the moment, the [`emo`](https://github.com/hadley/emo) package does not provide functionality for pdf documents. One alternative would be to use one of several [emoji extractors](https://github.com/rinatkhanov/emoji-extractor). Even still, you are forced to include emoji as an image. One problem with this method is that, althogh the emoji images are fairly high-resolution, they are named in sequential order. In other words, the Unicode characters are lost in the file names, which makes it difficult to search for the emoji you want.
-adding a line
