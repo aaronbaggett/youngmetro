@@ -12,6 +12,8 @@ library(emo)
 ```
 
 # youngmetro <img src="http://aaronbaggett.com/images/youngmetro_logo.png" align="right" />
+# Covr #
+[![Build Status](https://travis-ci.org/aaronbaggett/youngmetro.svg?branch=master)](https://travis-ci.org/aaronbaggett/youngmetro)
 
 <br>
 
