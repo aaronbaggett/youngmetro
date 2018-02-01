@@ -12,7 +12,6 @@ library(emo)
 ```
 
 # youngmetro <img src="http://aaronbaggett.com/images/youngmetro_logo.png" align="right" />
-# Covr #
 [![Build Status](https://travis-ci.org/aaronbaggett/youngmetro.svg?branch=master)](https://travis-ci.org/aaronbaggett/youngmetro)
 
 <br>
@@ -32,7 +31,7 @@ install.packages("devtools")
 devtools::install_github("aaronbaggett/youngmetro")
 ```
 
-## Usage `r emo::ji("laptop")`
+## Usage `r emo::ji("computer")`
 
 ### RStudio
 The `youngmetro` theme is designed to be used primarily within RStudio. Once installed, select *File* > *New File* > *R Markdown* > *From Template* > `youngmetro`. After naming and selecting a location for your prestnation, a new R Markdown document will open in the Source pane. This document contains some basic information that you will want to update (see **Front Matter** below).
