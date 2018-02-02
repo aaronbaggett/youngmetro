@@ -6,7 +6,7 @@
 \alias{youngmetro-package}
 \title{youngmetro: A Custom Beamer Theme in R Markdown}
 \description{
-A custom R Markdown Beamer presentation theme based on sthlm, HSRM, and Metropolis themes.
+This package provides a custom R Markdown Beamer theme based on the sthlm, HSRM, and Metropolis themes.
 }
 \details{
 Trial run on RMarkdown templates
