@@ -22,7 +22,9 @@ RStudio via R Markdown. This theme borrows heavily from the
 ## Installation 🔌
 
 ``` r
-install.packages("devtools")
+if (!require("devtools")) {
+  install.packages("devtools", dependencies = TRUE) 
+}
 devtools::install_github("aaronbaggett/youngmetro")
 ```
 
