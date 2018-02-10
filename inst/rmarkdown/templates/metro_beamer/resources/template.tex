@@ -587,7 +587,7 @@ eso-pic,
 \newdimen\progressbar@tmpdim % auxiliary dimension
 
 \progressbar@pbwd=\paperwidth
-\progressbar@pbht=.5ex
+\progressbar@pbht=1.25ex
 
 % the progress bar
 \def\progressbar@progressbar{%
@@ -611,7 +611,7 @@ eso-pic,
 
 \setbeamertemplate{headline}{
 
-  \begin{beamercolorbox}[wd=\paperwidth,ht=.5ex,center,dp=.5ex]{sthlmLightGrey}%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1ex,center,dp=0ex]{sthlmLightGrey}%
     \progressbar@progressbar%
   \end{beamercolorbox}%
 }
@@ -631,7 +631,7 @@ eso-pic,
 % ------------------------------------------------------------------------------------------------
 \setbeamertemplate{frametitle}
 {
-\begin{beamercolorbox}[sep=1.375ex,wd=\paperwidth,leftskip=0.075cm,rightskip=0.3cm,ht=2.75ex,dp=1.375ex]{frametitle}
+\begin{beamercolorbox}[sep=0ex,wd=\paperwidth,leftskip=0.25cm,rightskip=0.3cm,ht=2.75ex,dp=1.375ex]{frametitle}
 	 \usebeamerfont*{frametitle}{\insertframetitle}%
 \end{beamercolorbox}
 }
@@ -660,13 +660,13 @@ eso-pic,
 {
   \leavevmode%
   \hbox{%
-  \begin{beamercolorbox}[sep=1ex,wd=.333333\paperwidth,ht=2.25ex,dp=1ex,left]{author in head/foot}%
+  \begin{beamercolorbox}[sep=0.25ex,wd=.333333\paperwidth,ht=3.25ex,dp=1.25ex,left]{author in head/foot}%
     \usebeamerfont{author in head/foot}\insertshortauthor\expandafter\beamer@ifempty\expandafter{\beamer@shortinstitute}{}{~~(\insertshortinstitute)}
   \end{beamercolorbox}%
-  \begin{beamercolorbox}[sep=1ex,wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+  \begin{beamercolorbox}[sep=0.5ex,wd=.333333\paperwidth,ht=3.25ex,dp=1.25ex,center]{title in head/foot}%
     \usebeamerfont{title in head/foot}\insertshorttitle
   \end{beamercolorbox}%
-  \begin{beamercolorbox}[sep=1ex,wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+  \begin{beamercolorbox}[sep=0.5ex,wd=.333333\paperwidth,ht=3.25ex,dp=1.25ex,right]{date in head/foot}%
     \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
     \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
   \end{beamercolorbox}}%
