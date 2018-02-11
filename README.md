@@ -60,17 +60,17 @@ The Pandoc YAML is pre-populated with the following:
 
 ``` yaml
 ---
-title: "Introduction to RStudio"
-shorttitle: "Ch. 1"
-subtitle: "Getting in There! Doing statistics! Learning! Growing!"
+title: "Presentation Title"
+shorttitle: "Short Title"
+subtitle: "Presentation Subtitle"
 author: "Aaron R. Baggett, Ph.D."
 short-author: "Baggett"
-date: 'February 01, 2018'
-short-date: '02/01/18'
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+short-date: '`r format(Sys.Date(), "%m/%d/%y")`'
 institute: | 
   | University of Mary Hardin-Baylor
   | PSYC 4316: Experimental Psychology
-short-institute: "PSYC 2316"
+short-institute: "PSYC XXXX"
 department: "Department of Psychology" # Institute must be defined
 mainfont: Roboto
 monofont: Lucida Console
