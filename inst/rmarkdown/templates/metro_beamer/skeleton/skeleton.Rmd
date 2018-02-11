@@ -21,8 +21,10 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(ggplot2)
-library(dplyr)
+if (!require("devtools")) {
+  install.packages("devtools", dependencies = TRUE) 
+}
+library(tidyverse)
 ```
 
 # Block Quote
