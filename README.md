@@ -69,8 +69,7 @@ date: '`r format(Sys.Date(), "%B %d, %Y")`'
 short-date: '`r format(Sys.Date(), "%m/%d/%y")`'
 institute: | 
   | University of Mary Hardin-Baylor
-  | PSYC 4316: Experimental Psychology
-short-institute: "PSYC XXXX"
+  | PSYC 431XXXXxpCOURSE TITLEort-institute: "PSYC XXXX"
 department: "Department of Psychology" # Institute must be defined
 mainfont: Roboto
 monofont: Lucida Console
