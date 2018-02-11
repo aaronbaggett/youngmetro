@@ -1,6 +1,6 @@
 Package: youngmetro
 Title: A Custom Beamer Theme in R Markdown
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: person("Aaron", "Baggett", email = "abaggett@umhb.edu", role = c("aut", "cre"))
 Description: This package provides a custom R Markdown Beamer theme based on the sthlm, HSRM, and Metropolis themes.
 URL: https://github.com/aaronbagget/youngmetro
