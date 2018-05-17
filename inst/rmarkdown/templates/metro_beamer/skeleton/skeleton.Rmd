@@ -75,7 +75,7 @@ tx_bubble <- txhousing %>%
 - Calculate sample variance ($s^2$)
 
 \begin{equation}
-{s}^{2}=\frac{{\Sigma(X-\bar{X})}^{2}}{N-1} 
+{s}^{2}=\frac{1}{n-1}\sum{{({X}_{i}-\bar{X})}^{2}}
 \label{eq:variance}
 \end{equation}
 
