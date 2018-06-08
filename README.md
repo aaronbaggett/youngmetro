@@ -69,9 +69,11 @@ date: '`r format(Sys.Date(), "%B %d, %Y")`'
 short-date: '`r format(Sys.Date(), "%m/%d/%y")`'
 institute: | 
   | University of Mary Hardin-Baylor
-  | PSYC 431XXXXxpCOURSE TITLEort-institute: "PSYC XXXX"
+  | PSYC XXXX: COURSE TITLE
+short-institute: "PSYC XXXX"
 department: "Department of Psychology" # Institute must be defined
 mainfont: Roboto
+monofont: Lucida Console
 monofont: Lucida Console
 fontsize: 14pt
 classoption: aspectratio = 1610
